@@ -1,0 +1,306 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+@media screen and (width <= 768px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.headerClss{
+    height: 100vh;
+    background-color: #333333;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 75%;
+    }
+}
+
+/* @media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+} */
+
+
+
+.row {
+    margin-top: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.rowLogo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.imageLogo {
+    height: 120px;
+}
+
+.imageDiv {
+    margin-right: 5%;
+}
+
+.ebook {
+    height: 80vh;
+}
+
+.textDiv {
+    margin-left: 5%;
+    color: white
+}
+
+.textDiv h1{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.textDiv p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #aaaaaa;
+}
+
+.buttonClass {
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    background-color: #37B05D;
+    border-radius: 25px;
+    padding: 15px 40px;
+}
+
+.contenido {
+    margin-top: 15%;
+}
+
+.textSect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tam {
+    width: 40%;
+}
+
+.tam h2 {
+    color: #222222;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.tam p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #aaaaaa;
+}
+
+.tam h2, .tam p {
+    text-align: center;
+}
+
+.iconSect {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentIcons {
+    margin: 10px;
+    text-align: center;
+}
+
+svg{
+    color: #37B05D;
+}
+
+.textIcons h2 {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.textIcons p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #aaaaaa;
+}
+
+hr {
+    margin-top: 8%;
+    width: 75%;
+    margin-bottom: 8%;
+    border: none;
+    border-top: 0.5px solid #d9d8d8;
+}
+
+.ipadSect {
+    margin-top: 5%;
+    display: flex;
+}
+
+.bigText {
+    margin-bottom: 60px;
+}
+
+.ipadTitle {
+    font-family: "Ubuntu", sans-serif;
+    color: #222222;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.ipadText {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #aaaaaa;
+}
+
+.efecto:hover {
+    transform: translate(0,-0.5);
+}
+
+.firstIcon {
+    display: flex;
+    visibility: visible;
+    animation-duration: 1s;
+    animation-name: fadeInUp;
+}
+
+.bookIcon {
+    margin-right: 20px;
+    padding-top: 15px;
+}
+
+.firstIcon h2 {
+    font-family: "Ubuntu", sans-serif;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.firstIcon p {
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #aaaaaa;
+}
+
+.personContainer {
+    background-color: #F8F8F8;
+    margin-top: 5%;
+}
+
+.personOrg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.colContent {
+    padding: 120px 100px 90px 120px;
+}
+
+.colContent h2 {
+    color: #363636;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.colContent p {
+    color: #999999;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+.usersDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.userImgDiv {
+    text-align: center;
+    padding: 30px;
+}
+
+.userImgDiv p {
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+    color: #999999;
+}
